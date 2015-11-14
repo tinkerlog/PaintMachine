@@ -1,0 +1,37 @@
+<resources
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    <item name="android:windowActionBar">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomText">
+        <!-- item name="fontName">fonts/DOTFONT.TTF</item -->
+        <item name="fontName">fonts/Ozone.ttf</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="CustomButton">
+        <!-- item name="fontName">fonts/DOTFONT.TTF</item -->
+        <item name="fontName">fonts/Ozone.ttf</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+
+    <style name="DrawerItem" parent="CustomText">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="CustomToggle" parent="CustomText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+
+</resources>

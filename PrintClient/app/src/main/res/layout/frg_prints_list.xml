@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/background"
+                android:descendantFocusability="blocksDescendants"
+    >
+
+    <ListView
+        android:id="@+id/frg_prints_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none"/>
+
+    <com.tinkerlog.printclient.view.CustomTextView
+        android:id="@+id/frg_prints_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:shadowColor="#80000000"
+        android:textSize="24sp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="YOU HAVE NO SAVED PRINTS. MAKE YOUR FIRST BY PRESSING THE BUTTON BELOW."
+        android:textColor="@color/textColor"
+        android:visibility="visible"
+        style="@style/CustomText"
+        />
+
+    <ImageButton
+        android:id="@+id/frg_prints_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/add"/>
+
+</RelativeLayout>

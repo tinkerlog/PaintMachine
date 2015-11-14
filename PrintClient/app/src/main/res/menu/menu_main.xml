@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/menu_disconnect"
+          android:title="Offline"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/print_offline"
+        />
+    <item android:id="@+id/menu_connect"
+          android:title="Connected"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/print_online"
+        />
+    <item android:id="@+id/menu_error"
+          android:title="Connected"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/print_error"
+        />
+
+</menu>

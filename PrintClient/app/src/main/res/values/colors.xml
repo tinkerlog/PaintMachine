@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="textColor">#FFD0D0D0</color>
+    <color name="text_background">#FF303030</color>
+    <color name="background">#FF202020</color>
+    <color name="background_drawer">#B0000000</color>
+    <color name="image_background">#FFE0E0E0</color>
+    <color name="button_background">#FF303030</color>
+    <color name="button_background_pressed">#FF20A080</color>
+    <color name="hilite">#FF20A080</color>
+
+</resources>

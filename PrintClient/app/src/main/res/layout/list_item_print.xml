@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/list_image_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dummy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:background="#A0202020"
+        >
+        <com.tinkerlog.printclient.view.CustomTextView
+            android:id="@+id/act_print_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            style="@style/CustomText"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/list_delete_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:alpha="0.7"
+            android:background="@drawable/delete"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

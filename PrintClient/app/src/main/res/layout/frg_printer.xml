@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/act_print_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frg_print_image"
+            android:layout_width="match_parent"
+            android:minHeight="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#FF303030"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <com.tinkerlog.printclient.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/CustomText"
+            android:textSize="20dp"
+            android:text="Print this print"/>
+        <com.tinkerlog.printclient.view.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="PRINT"
+            android:background="@color/button_background"
+            style="@style/CustomButton"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_printer_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0101010"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@color/background"
+            >
+            <com.tinkerlog.printclient.view.CustomTextView
+                android:id="@+id/frg_printer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/CustomText"
+                android:textSize="20dp"
+                android:text="PRINTER IS NOT CONNECTED"/>
+            <com.tinkerlog.printclient.view.CustomButton
+                android:id="@+id/frg_printer_connect_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="CONNECT"
+                style="@style/CustomButton"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

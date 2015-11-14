@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/act_process_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/act_process_image"
+            android:layout_width="match_parent"
+            android:minHeight="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#FF404040"/>
+
+        <ImageView
+            android:id="@+id/act_process_src_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/act_process_image"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FF202020"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/act_process_image_container"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <SeekBar
+                android:id="@+id/act_process_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="128"
+                android:max="255"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <com.tinkerlog.printclient.view.CustomToggleButton
+            android:id="@+id/act_process_filter_red"
+            style="@style/CustomToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textOn="1"
+            android:textOff="-"
+            android:drawableTop="@drawable/filter_small"
+            android:textColor="@color/textColor"
+            android:background="#FF603030"
+            />
+        <com.tinkerlog.printclient.view.CustomToggleButton
+            android:id="@+id/act_process_filter_green"
+            style="@style/CustomToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textOn="1"
+            android:textOff="-"
+            android:drawableTop="@drawable/filter_small"
+            android:textColor="@color/textColor"
+            android:background="#FF306030"
+            />
+        <com.tinkerlog.printclient.view.CustomToggleButton
+            android:id="@+id/act_process_filter_blue"
+            style="@style/CustomToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textOn="1"
+            android:textOff="-"
+            android:drawableTop="@drawable/filter_small"
+            android:textColor="@color/textColor"
+            android:background="#FF303060"
+            />
+        <com.tinkerlog.printclient.view.CustomToggleButton
+            android:id="@+id/act_process_filter_bw"
+            style="@style/CustomToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textOn="1"
+            android:textOff="-"
+            android:drawableTop="@drawable/filter_small"
+            android:textColor="@color/textColor"
+            android:background="#FF303030"
+            />
+        <com.tinkerlog.printclient.view.CustomToggleButton
+            android:id="@+id/act_process_invert"
+            style="@style/CustomToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textOn="1"
+            android:textOff="-"
+            android:drawableTop="@drawable/invert_small"
+            android:textColor="@color/textColor"
+            android:background="#FF303030"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFF0000"
+            >
+
+        </LinearLayout>
+
+        <com.tinkerlog.printclient.view.CustomButton
+            android:id="@+id/act_process_done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="DONE"
+            style="@style/CustomButton"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

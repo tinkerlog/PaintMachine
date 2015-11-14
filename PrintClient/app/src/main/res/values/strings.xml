@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PrintClient</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_connect">Connect</string>
+
+    <string name="toast_connected">CONNECTED</string>
+    <string name="toast_disconnected">CONNECTION LOST</string>
+    <string name="toast_error">CONNECTION LOST</string>
+
+    <string-array name="main_menu">
+        <item>PRINTS</item>
+        <item>MANUAL CONTROL</item>
+        <item>PRINTER</item>
+    </string-array>
+
+    <string-array name="color_filters">
+        <item>red</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>b/w</item>
+    </string-array>
+
+</resources>
